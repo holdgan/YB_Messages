@@ -10,7 +10,7 @@ from yb import html_parser
 from yb import html_outputer
 
 class SpiderMain(object):
-    def _init_(self):
+    def __init__(self):
         self.urls=url_manager.UrlManager();
         self.downloader=html_downloader.HtmlDownloader();
         self.parser=html_parser.HtmlParser();
@@ -39,7 +39,7 @@ class SpiderMain(object):
 
 
 
-if _name_=="_main_":
+if __name__=="__main__":
     root_url="https://www.yuanbao.com/news/?corpid=0"
     obj_spider=SpiderMain()
     obj_spider.craw(root_url)

@@ -6,7 +6,7 @@ Created on 2016年10月25日
 
 
 class UrlManager(object):
-    def _init_(self):
+    def __init__(self):
         self.new_urls=set()
         self.old_urls=set()
     
